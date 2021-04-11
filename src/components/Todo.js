@@ -5,10 +5,10 @@ import React from 'react';
 const Todo = ({text, todo, todos,setTodos}) => {
 // Events
 const deleteHandler = () =>{
-    // its filtring the state out of element that matches the id and gets rid of it
+    // its filtring the state out of element that matches the id, and gets rid of that element
     // console.log(todo)
     setTodos(todos.filter(el=> el.id !== todo.id))
-    }
+    } 
     const completeHandler = () =>  {
         setTodos(todos.map((item)=>{
             if(item.id===todo.id){

@@ -56,7 +56,7 @@ const getLocalTodos = () =>{
   return (
     <div className="App">
       <header>
-  <h1>Todo List</h1>
+  <h1>Todo List in React.js</h1>
       </header>
       <Form inputText={inputText}  todos={todos} setTodos={setTodos} setInputText={setInputText}
       setStatus={setStatus}  />

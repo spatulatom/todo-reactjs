@@ -1,5 +1,11 @@
 import React from 'react';
 
+// another way of writnig props is:
+// const Form = (props) => {
+  // and then whenever you need props you go:
+  // prop.todos etc
+  
+
 const Form = ({setInputText,todos,setTodos,inputText,setStatus}) =>{
     // here we can js code and function
     const inputTextHandler=(e) =>{
@@ -9,12 +15,13 @@ const Form = ({setInputText,todos,setTodos,inputText,setStatus}) =>{
         e.preventDefault();
         setTodos([
           // ...todos means that if there are any todos - pass them along,
-    // as wthat after coma we spacify whats next
+    // as wthat after coma we spacify what's next
             ...todos,
             {text:inputText, completed:false, id: Math.random() *1000}
         ]);
         setInputText("");
     };
+    console.log(todos);
     const statusHandler = (e) => {
       setStatus(e.target.value)
     }
