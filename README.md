@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+See he deployed app: [Deployed on GitHub pages](https://spatulatom.github.io/todo-reactjs/).
 
 ## Available Scripts
 
